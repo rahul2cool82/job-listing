@@ -4,6 +4,8 @@ import { fetchListJobs } from '../services/api.service'
 import { addJobs, setTotalCount } from '../redux/slices/jobList'
 import JobCard from './JobCard'
 
+import "./../css/JobList.css"
+
 function JobList() {
 
     const {jdList, totalCount} = useSelector((state) => state.jobs)
@@ -18,7 +20,7 @@ function JobList() {
 
     useEffect(() => {
         fetchJobs()
-    }, [])
+    }, [offset])
 
     useEffect(() => {
         const observer = new IntersectionObserver(handleObserver, {
@@ -55,7 +57,7 @@ function JobList() {
     const handleObserver = (entities) => {
         const target = entities[0];
         if (target.isIntersecting) {
-            fetchJobs()
+            setOffset(offset+1)
         }
     };
 
@@ -93,8 +95,8 @@ function JobList() {
     }
 
     return (
-        <div>
-            <ul>
+        <section className='job-list-section'>
+            <ul className='job-list'>
                 {
                     listFilteredJobs().map((job, index) => (
                         <li key={job?.jdUid + index}> <JobCard job={job} /> </li>
@@ -108,7 +110,7 @@ function JobList() {
             <div ref={loader} style={{ visibility: loading ? 'visible' : 'hidden' }}>
                 Loading...
             </div>
-        </div>
+        </section>
     )
 }
 

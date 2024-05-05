@@ -1,0 +1,25 @@
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.job-list-section{
+    padding: 10px 16px;
+}
+
+ul.job-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+ul.job-list li {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    display: block;
+    padding: 0 16px;
+}

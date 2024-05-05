@@ -1,0 +1,126 @@
+.job-card{
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px 0px !important;
+    padding: 20px 20px 14px;
+}
+
+.posted{
+    padding: 4px 6px;
+    box-shadow: rgba(6, 6, 6, 0.05) 0px 2px 6px 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    width: max-content;
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+
+.company-details{
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+}
+
+.company-details img{
+    width: 25px;
+    height: 2.5rem;
+    
+}
+
+.company-name{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: #8b8b8b;
+}
+
+.job-role{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.job-location{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.estimated-salary{
+    margin: 8px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.about-company{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.about-us{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.job-description{
+    padding: 24px 0;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.job-description a{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    display: block;
+    padding: 16px;
+    color : rgba(73, 67, 218, 1);
+    text-align: center;
+    background-color: rgba(255, 255, 255, .95);
+    width: 100%;
+    text-decoration: none;
+}
+
+.job-experience-minimum{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    color: #8b8b8b;
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8px;
+    align-items: center;
+
+    width: 100%;
+    background-color: rgba(85, 239, 196,1);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.btn.btn-unlock{
+    background-color: rgba(85,92,239,1);
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn.btn-unlock img{
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+    border-radius: 100px;
+    filter: blur(2px);
+}
