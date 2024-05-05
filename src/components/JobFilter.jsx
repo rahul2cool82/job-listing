@@ -27,7 +27,7 @@ function JobFilter() {
     return (
         <section className='job-filter'>
             
-            <div className="role">
+            <div className="role filter-box">
                 <FormControl>
                     <InputLabel id="role">Roles</InputLabel>
                     <Select
@@ -46,7 +46,7 @@ function JobFilter() {
                 </FormControl>
             </div>
             
-            <div className="employees">
+            <div className="employees filter-box">
                 <FormControl>
                     <InputLabel id="employees">Number Of Employees</InputLabel>
                     <Select
@@ -64,7 +64,7 @@ function JobFilter() {
                 </FormControl>
             </div>
 
-            <div className="experience">
+            <div className="experience filter-box">
                 <FormControl>
                     <InputLabel id="experience">Experience</InputLabel>
                     <Select
@@ -91,7 +91,7 @@ function JobFilter() {
                 </FormControl>
             </div>
 
-            <div className="location">
+            <div className="location filter-box">
                 <FormControl>
                     <InputLabel id="location">Remote</InputLabel>
                     <Select
@@ -110,7 +110,7 @@ function JobFilter() {
                 </FormControl>
             </div>
 
-            <div className="basepay">
+            <div className="basepay filter-box">
                 <FormControl>
                     <InputLabel id="basepay">Minimum Base Pay Salary </InputLabel>
                     <Select
@@ -127,7 +127,7 @@ function JobFilter() {
                 </FormControl>
             </div>
 
-            <div className="company">
+            <div className="company filter-box">
                 <TextField id="company" label="Company" variant="outlined" onChange={(ev) => setCompName(ev.target.value)} />
             </div>
 

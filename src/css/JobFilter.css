@@ -13,8 +13,10 @@
     gap: 16px;
 }
 
+
 .job-filter > div {
     flex-grow: 2;
+    position: relative;
 }
 
 .job-filter .experience,
@@ -25,4 +27,35 @@
 
 .job-filter .company{
     flex-grow: 1;
+}
+
+.filter-box:not(.company)::after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 1px;
+    background-color: rgba(37, 37, 37, 0.478);
+    right: 32px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .job-filter>div.filter-box {
+        flex-grow: 0;
+        flex-basis: calc(33.33% - 11px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .job-filter>div.filter-box {
+        flex-basis: calc(50% - 8px);
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .job-filter>div.filter-box {
+        flex-basis: 100%;
+    }
 }

@@ -23,3 +23,17 @@ ul.job-list li {
     display: block;
     padding: 0 16px;
 }
+
+@media only screen and (max-width: 992px) {
+    ul.job-list li {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    ul.job-list li {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
