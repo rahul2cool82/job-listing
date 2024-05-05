@@ -4,9 +4,9 @@ export const jobFilterSlice = createSlice({
     initialState: {
         minExp: 0,
         minJdSalary: 0,
-        companyName: null,
-        location: null,
-        jobRole: null,
+        companyName: "",
+        location: "",
+        jobRole: "",
     },
     name: 'Job List',
     reducers: {

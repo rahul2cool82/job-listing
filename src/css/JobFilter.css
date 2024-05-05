@@ -1,0 +1,28 @@
+.MuiInputBase-root {
+    width: 100%;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+}
+
+.job-filter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    gap: 16px;
+}
+
+.job-filter > div {
+    flex-grow: 2;
+}
+
+.job-filter .experience,
+.job-filter .location,
+.job-filter .company {
+    flex-grow: 1;
+}
+
+.job-filter .company{
+    flex-grow: 1;
+}
